@@ -1,7 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Maritime Terms</h1>
+<h1>Maritime &amp; Marine Logistics Terms | <a href="https://www.boxwhere.com">Back to BoxWhere</a></h1>
+<hr>
 
+<p>In an effort to simplify the maritime and marine logistics community, we are assembling a database of maritime and marine logistics terms free of use for you.</p>
+<p>Please be patient with us as we build this app out fully. In the coming months we will be adding search and a refined user interface.</p>
+<hr>
 <table>
   <thead>
     <tr>
@@ -14,16 +18,14 @@
   <tbody>
     <% @maritime_terms.each do |maritime_term| %>
       <tr>
-        <td><%= maritime_term.term %></td>
-        <td><%= maritime_term.explination %></td>
+        <td><%= link_to maritime_term.term, maritime_term %></td>
+        <td><%= maritime_term.explination.truncate(30) %></td>
         <td><%= link_to 'Show', maritime_term %></td>
-        <td><%= link_to 'Edit', edit_maritime_term_path(maritime_term) %></td>
-        <td><%= link_to 'Destroy', maritime_term, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<hr>
+<p>Have a suggenstion or want to contrubute? Send us an email to nick at boxwhere.com</p>
 
-<br>
-
-<%= link_to 'New Maritime Term', new_maritime_term_path %>
+<p>All definitions here are without warranty.</p>

@@ -1,13 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="max-w rounded overflow-hidden shadow-lg">
+  <div class="px-10 py-8">
+    <div class="font-bold text-xl mb-2"><%= @maritime_term.term %></div>
+    <p class="text-gray-700 text-base">
+      <%= @maritime_term.explination %>
+    </p>
+  </div>
+  <div class="p-8">
+    <%= link_to 'Back', maritime_terms_path, class: 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded' %>
+  </div>
 
-<p>
-  <strong>Term:</strong>
-  <%= @maritime_term.term %>
-</p>
-
-<p>
-  <strong>Explination:</strong>
-  <%= @maritime_term.explination %>
-</p>
-
-<%= link_to 'Back', maritime_terms_path %>
+</div>

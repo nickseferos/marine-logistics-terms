@@ -1,31 +1,35 @@
-<p id="notice"><%= notice %></p>
+<br><br>
+<div class="max-w mb-4 rounded overflow-hidden shadow-lg bg-white">
+  <div class="px-6 py-4">
+    <p class="text-gray-700 text-base">
+      In an effort to simplify the maritime and marine logistics community, we are assembling a database of maritime and marine logistics terms free of use for you.
+    </p>
+    <p class="text-gray-700 text-base pt-2">Please be patient with us as we build this app out fully. In the coming months we will be adding search and a refined user interface.</p>
+  </div>
+</div>
 
-<h1>Maritime &amp; Marine Logistics Terms | <a href="https://www.boxwhere.com">Back to BoxWhere</a></h1>
-<hr>
-
-<p>In an effort to simplify the maritime and marine logistics community, we are assembling a database of maritime and marine logistics terms free of use for you.</p>
-<p>Please be patient with us as we build this app out fully. In the coming months we will be adding search and a refined user interface.</p>
-<hr>
-<table>
+<div class="max-w mb-4 rounded overflow-hidden content-center bg-white">
+<table class="table-auto p-8">
   <thead>
     <tr>
-      <th>Term</th>
-      <th>Explination</th>
-      <th colspan="3"></th>
+      <th class="px-4 py-2">Term</th>
+      <th class="px-4 py-2">Explination</th>
+      <th class="px-4 py-2">Link</th>
     </tr>
   </thead>
-
   <tbody>
     <% @maritime_terms.each do |maritime_term| %>
       <tr>
-        <td><%= link_to maritime_term.term, maritime_term %></td>
-        <td><%= maritime_term.explination.truncate(30) %></td>
-        <td><%= link_to 'Show', maritime_term %></td>
+        <td class="border px-4 py-2"><%= link_to maritime_term.term, maritime_term%></td>
+        <td class="border px-4 py-2"><%= maritime_term.explination.truncate(30)  %></td>
+        <td class="border px-4 py-2"><%= link_to 'Show', maritime_term%></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<hr>
-<p>Have a suggenstion or want to contrubute? Send us an email to nick at boxwhere.com</p>
+</div>
+<div class="max-w mb-4 rounded overflow-hidden bg-white">
+<p class="text-gray-700 text-base px-6 py-4 ">Have a suggenstion or want to contrubute? Send us an email to nick at boxwhere.com</p>
 
-<p>All definitions here are without warranty.</p>
+<p class='text-gray-700 px-6 py-4'>All definitions here are without warranty.</p>
+</div>

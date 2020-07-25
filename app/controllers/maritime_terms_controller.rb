@@ -4,7 +4,7 @@ class MaritimeTermsController < ApplicationController
   # GET /maritime_terms
   # GET /maritime_terms.json
   def index
-    @maritime_terms = MaritimeTerm.all
+    @maritime_terms = MaritimeTerm.order('term ASC')
   end
 
   # GET /maritime_terms/1

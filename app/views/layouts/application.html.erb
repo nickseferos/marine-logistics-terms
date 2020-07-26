@@ -10,17 +10,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="bg-gray-100">
-    <script async src="https://cdn.contextcue.com/adsbycontextcue.js"></script>
-    <%= render partial: 'shared/navigation' %>
-    <div class="grid gap-4 p-8 sm:grid-cols-1 md:grid-cols-2">
-      <div><%= yield %></div>
-      <div>
-        <ins class="adsbycontextcue" data-cc-site="00709622-a7c8-4388-bba8-a662bc746df3" data-cc-slot="d6BghddFm" style="style="width:300px;height:600px;"></ins>
+    <body class="bg-gray-100">
+      <script async src="https://cdn.contextcue.com/adsbycontextcue.js"></script>
+      <%= render partial: 'shared/navigation' %>
+      <div class="grid gap-4 p-8 sm:grid-cols-1 md:grid-cols-2">
+        <div><%= yield %></div>
+        <div>
+          <ins class="adsbycontextcue" data-cc-site="00709622-a7c8-4388-bba8-a662bc746df3" data-cc-slot="d6BghddFm" style="style="width:300px;height:600px;"></ins>
+        </div>
       </div>
-    </div>
-    <ins class="adsbycontextcue" data-cc-site="00709622-a7c8-4388-bba8-a662bc746df3" data-cc-slot="d6BghddFm" style="display:block;"></ins>
-  </body>
+      <ins class="adsbycontextcue" data-cc-site="00709622-a7c8-4388-bba8-a662bc746df3" data-cc-slot="d6BghddFm" style="display:block;"></ins>
+    </body>
 </html>
 
 
